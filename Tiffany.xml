@@ -8,7 +8,17 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="96"></block>
+          <block type="movement_forward" id="116">
+            <next>
+              <block type="robot_delay" id="118" inline="true">
+                <value name="DELAY">
+                  <block type="math_arithmetic" id="125" inline="true">
+                    <field name="OP">MULTIPLY</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
