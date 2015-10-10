@@ -7,28 +7,32 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="led_select" id="115" inline="true">
-        <field name="ACTION">FLASH</field>
-        <value name="LED">
-          <block type="math_number" id="123">
-            <field name="NUM">3</field>
-          </block>
-        </value>
+      <block type="movement_forward" id="167">
         <next>
-          <block type="led_select" id="143" inline="true">
+          <block type="led_select" id="115" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="math_number" id="150">
-                <field name="NUM">5</field>
+              <block type="math_number" id="123">
+                <field name="NUM">3</field>
               </block>
             </value>
             <next>
-              <block type="robot_delay" id="134" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="157">
-                    <field name="NUM">100</field>
+              <block type="led_select" id="143" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="150">
+                    <field name="NUM">5</field>
                   </block>
                 </value>
+                <next>
+                  <block type="robot_delay" id="134" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="157">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
